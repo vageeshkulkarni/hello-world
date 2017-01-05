@@ -1,0 +1,94 @@
+<html>
+<head>
+  <style>
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+</style>
+<script>
+
+
+
+
+</script>
+</head>
+
+<body>
+
+<form action="action_page.php">
+  <fieldset>
+    <legend>Personal information:</legend>
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br>
+  
+
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+  <br><br>
+
+  <p>select your personal car</p>
+  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi" selected>Audi</option>
+  </select> 
+  <br>
+
+  <p>write about your hobbies </p>
+  <textarea name="message" rows="10" cols="30"></textarea>
+
+  
+  </fieldset>
+  <br><br>
+
+  <fieldset>
+      <legend>your Personal Computer information:</legend>
+      <p> write which browser you using </p>
+  <input list="browsers" name="browser">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <br><br>
+
+  PC Quality (between 1 and 5):
+  <input type="number" name="quality" min="1" max="5">
+  <br><br>
+ 
+  <p>write other specifications about your PC </p><br>
+  <textarea name="message" rows="10" cols="30"></textarea>
+
+  </fieldset>
+
+  <br><br>
+
+  <button type="button" onclick="alert('do you written all fields!')">before sumbit click me!</button><br>
+
+  <input type="submit" value="Submit">
+  <input type="reset">
+
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "action_page.php".</p>
+
+</body>
+</html>
